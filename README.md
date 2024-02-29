@@ -6,21 +6,21 @@ This is the README file for the second assignment in CS:3980 for the Spring 2024
 
 ## How to Run
 First, create a virtual environment with
-`python -m venv venv`
+`python -m venv venv`,
 and open it with
-`.\venv\Scripts\activate`
+`.\venv\Scripts\activate`.
 
 Then install the necessary packages with
-`pip install -r requirements.txt`
+`pip install -r requirements.txt`.
 
 Finally, start the program with
-`uvicorn api:app --port 8000 --reload`
+`uvicorn api:app --port 8000 --reload`.
 
-Then just open localhost:8000 and you should see the webpage
+Then just open localhost:8000 and you should see the webpage.
 
 
 ## api.py
-This is the Python code that runs the website. It uses FastAPI for the app and Starlette for the file responses
+This is the Python code that runs the website. It uses FastAPI for the app and Starlette for the file responses.
 
 
 ## index.html
