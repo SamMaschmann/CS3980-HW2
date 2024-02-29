@@ -1,4 +1,5 @@
 from fastapi import FastAPI
+from starlette.responses import FileResponse
 import requests
 
 apiurl = "https://datausa.io/api/data?drilldowns=Nation&measures=Population"
@@ -12,5 +13,9 @@ for item in response_dict.get("data"):
 app = FastAPI()
 
 @app.get("/")
-async def welcome() -> dict:
-    return { "message": "Hello World"}
+async def read_index():
+    return FileResponse('index.html')
+
+@app.get("/style.css")
+async def read_index():
+    return FileResponse('style.css')
